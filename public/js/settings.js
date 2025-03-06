@@ -3,6 +3,7 @@ $(document).ready(function () {
     if (tableElement.length) {
         var settingsDataUrl = tableElement.data('url');
         var table = tableElement.DataTable({
+            
             pageLength: 6,
             responsive: false, // Disable responsive to prevent hiding columns
             scrollX: true,
