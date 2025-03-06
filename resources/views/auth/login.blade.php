@@ -9,8 +9,7 @@
     <meta content="Techzaa" name="author" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{asset('theme/dist/assets/images/favicon.ico')}}">
-    <!-- Theme Config Js -->
+    <link href="{{ asset('website/assets/img/favicon.png')}}" rel="icon"> <!-- Theme Config Js -->
     <script src="{{asset('theme/dist/assets/js/config.js')}}"></script>
 
     <!-- App css -->
@@ -28,19 +27,17 @@
                     <div class="card overflow-hidden">
                         <div class="row g-0">
                             <div class="col-lg-6 d-none d-lg-block p-2">
-                                <img src="{{asset('theme/dist/assets/images/auth-img.jpg')}}" alt="" class="img-fluid rounded h-100">
+                                            <img src="{{ asset('storage/' .  $settings[0]->logo_image) }}" alt="dark logo" height="300" width="300">
                             </div>
                             <div class="col-lg-6">
                                 <div class="d-flex flex-column h-100">
-                                    <div class="auth-brand p-4">
-                                        <a href="index.html" class="logo-light">
-                                            <img src="{{asset('theme/dist/assets/images/logo.png')}}" alt="logo" height="22">
-                                        </a>
+                                    {{-- <div class="auth-brand p-2">
+                                        
                                         <a href="index.html" class="logo-dark">
-                                            <img src="{{asset('theme/dist/assets/images/logo-dark.png')}}" alt="dark logo" height="22">
+                                            <img src="{{ asset('storage/' .  $settings[0]->logo_image) }}" alt="dark logo" height="150" width="150">
                                         </a>
-                                    </div>
-                                    <div class="p-4 my-auto">
+                                    </div> --}}
+                                    <div class="p-2 my-auto">
                                         <h4 class="fs-20">Sign In</h4>
                                         <p class="text-muted mb-3">Enter your email address and password to access
                                             account.

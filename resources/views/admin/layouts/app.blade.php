@@ -10,8 +10,7 @@
 
     <!-- App favicon -->
     {{-- <link rel="shortcut icon" href="{assets/images/favicon.ico}"> --}}
-    <link rel="shortcut icon" href="{{asset('theme/dist/assets/images/favicon.ico')}}">
-
+    <link href="{{ asset('website/assets/img/favicon.png')}}" rel="icon">
     <!-- Fullcalendar css -->
     {{-- <link href="assets/vendor/fullcalendar/main.min.css" rel="stylesheet" type="text/css" /> --}}
     <link href="{{asset('theme/dist/assets/vendor/fullcalendar/main.min.css')}}" rel="stylesheet" type="text/css" />
@@ -282,7 +281,7 @@
     <script src="{{ asset('theme/dist/assets/vendor/datatables.net-buttons/js/buttons.print.min.js') }}"></script>
     <script src="{{ asset('theme/dist/assets/vendor/datatables.net-keytable/js/dataTables.keyTable.min.js') }}"></script>
     <script src="{{ asset('theme/dist/assets/vendor/datatables.net-select/js/dataTables.select.min.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.js"></script>
 
 
 </body>

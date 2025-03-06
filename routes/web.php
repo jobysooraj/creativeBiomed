@@ -21,7 +21,7 @@ Auth::routes();
 
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::middleware(['auth', 'user-access:Admin'])->group(function () {
+Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])->group(function () {
   
     Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');
     Route::resource('testimonials', TestimonialController::class);
