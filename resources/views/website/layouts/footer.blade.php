@@ -43,7 +43,7 @@
              </div>
 
              <div class="col-lg-4 col-md-12 footer-newsletter">
-                 <img src="{{ asset('storage/' .  $settings[0]->logo_image) }}" alt="">
+                 <img src="{{ asset('storage/' .  $settings[0]->logo_image) }}" width="100" height="100"alt="">
 
              </div>
 

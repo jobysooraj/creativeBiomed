@@ -4,9 +4,11 @@ $(document).ready(function() {
         var testimonialDataUrl = tableElement.data('url'); 
         var table = tableElement.DataTable({
             pageLength: 6,
+            responsive: true,
+            scrollX: true,
             lengthChange: false,
             bFilter: false,
-            autoWidth: false,
+            autoWidth: true,
             processing: true, 
             serverSide: true, 
             ajax: testimonialDataUrl, 

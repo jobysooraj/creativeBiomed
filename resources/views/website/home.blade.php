@@ -8,13 +8,13 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-        <img src="{{ asset('website/assets/img/hero-bg.jpg')}}" alt="" data-aos="fade-in">
+        <img src="{{ asset('website/assets/img/hero-bg.jpeg')}}" alt="" data-aos="fade-in">
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2 data-aos="fade-up" data-aos-delay="100">Bettter digital experience with Creative Biomed</h2>
-                    <p data-aos="fade-up" data-aos-delay="200">Empowering Healthcare Through Precision, Innovation, and Expertise.</p>
+                    <h2 data-aos="fade-up" class="text-danger" data-aos-delay="100">Bettter digital experience with Creative Biomed</h2>
+                    <p data-aos="fade-up" class="text-dark" data-aos-delay="200">Empowering Healthcare Through Precision, Innovation, and Expertise.</p>
                     <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
                         <a href="{{route('website.about')}}" class="btn-get-started">Get Started</a>
                         <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -235,7 +235,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2 text-center">
-                            <img src="{{ asset('website/assets/img/working-1.jpg')}}" alt="Diagnostic Equipment" class="img-fluid">
+                            <img src="{{ asset('website/assets/img/servi-img1.jpeg')}}" alt="Diagnostic Equipment" class="img-fluid">
                         </div>
                     </div>
                 </div><!-- End Tab Content Item -->
@@ -258,7 +258,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2 text-center">
-                            <img src="{{ asset('website/assets/img/working-2.jpg')}}" alt="Therapeutic Equipment" class="img-fluid">
+                            <img src="{{ asset('website/assets/img/service-img2.jpeg')}}" alt="Therapeutic Equipment" class="img-fluid">
                         </div>
                     </div>
                 </div><!-- End Tab Content Item -->
@@ -279,7 +279,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2 text-center">
-                            <img src="{{ asset('website/assets/img/working-3.jpg')}}" alt="Patient Monitoring" class="img-fluid">
+                            <img src="{{ asset('website/assets/img/service-img3.jpeg')}}" alt="Patient Monitoring" class="img-fluid">
                         </div>
                     </div>
                 </div><!-- End Tab Content Item -->
@@ -300,7 +300,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2 text-center">
-                            <img src="{{ asset('website/assets/img/working-4.jpg')}}" alt="Surgical Equipment" class="img-fluid">
+                            <img src="{{ asset('website/assets/img/services.jpeg')}}" alt="Surgical Equipment" class="img-fluid">
                         </div>
                     </div>
                 </div><!-- End Tab Content Item -->

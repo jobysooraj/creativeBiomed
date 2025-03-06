@@ -1,39 +1,41 @@
-$(document).ready(function() {
+$(document).ready(function () {
     var tableElement = $('#datatables-settings');
     if (tableElement.length) {
-        var settingsDataUrl = tableElement.data('url'); 
+        var settingsDataUrl = tableElement.data('url');
         var table = tableElement.DataTable({
             pageLength: 6,
+            responsive: false, // Disable responsive to prevent hiding columns
+            scrollX: true,
             lengthChange: false,
             bFilter: false,
-            autoWidth: false,
-            processing: true, 
-            serverSide: true, 
-            ajax: settingsDataUrl, 
+            autoWidth: true,
+            processing: true,
+            serverSide: true,
+            ajax: settingsDataUrl,
             columns: [
                 { data: 'id', name: 'id' },
-                { data: 'logo_image', name: 'logo_image' },            
-                { data: 'email', name: 'email'},
-                { data: 'company_address', name: 'company_address'},
-                { data: 'phone', name: 'phone'},
-                { data: 'whatsapp_id', name: 'whatsapp_id'},
-                { data: 'instagram_id', name: 'instagram_id'},
-                { data: 'facebook_id', name: 'facebook_id'},
-                { data: 'location', name: 'location'},
-                { data: 'action', name: 'action'},
+                { data: 'logo_image', name: 'logo_image' },
+                { data: 'email', name: 'email' },
+                { data: 'company_address', name: 'company_address' },
+                { data: 'phone', name: 'phone' },
+                { data: 'whatsapp_id', name: 'whatsapp_id' },
+                { data: 'instagram_id', name: 'instagram_id' },
+                { data: 'facebook_id', name: 'facebook_id' },
+                { data: 'location', name: 'location' },
+                { data: 'action', name: 'action' },
             ],
-            initComplete: function() {
-                setTimeout(function() {
+            initComplete: function () {
+                setTimeout(function () {
                     $('#datatables-settings tbody tr:first').trigger('click');
                 }, 500);
             }
         });
 
         // Handle row click event
-       
-        
+
+
     } else {
         console.error("Table with ID 'datatables-stocks' not found.");
     }
-   
+
 });
