@@ -60,9 +60,12 @@
                 <div class="collapse" id="sidebarPagesAuth">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('contactuses.index')}}">List</a>
+                        {{--  --}}
+                        {{--  --}}
+                        {{--  --}}
+                            <a href="">List</a>
                         </li>
-                     
+
                     </ul>
                 </div>
             </li>
@@ -76,19 +79,19 @@
                 <div class="collapse" id="sidebarLayouts">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('testimonials.index')}}" >List</a>
+                            <a href="" >List</a>
                         </li>
                         <li>
-                            <a href="{{route('testimonials.create')}}" >Add</a>
+                            <a href="" >Add</a>
                         </li>
-                       
+
                     </ul>
                 </div>
             </li>
 
             {{-- <li class="side-nav-title">Components</li> --}}
 
-           
+
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarExtendedUI" aria-expanded="false" aria-controls="sidebarExtendedUI" class="side-nav-link">
                     <i class="ri-compasses-2-line"></i>
@@ -98,9 +101,9 @@
                 <div class="collapse" id="sidebarExtendedUI">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('settings.index')}}">List</a>
+                            <a href="">List</a>
                         </li>
-                       
+
                     </ul>
                 </div>
             </li>
@@ -113,12 +116,12 @@
                 <div class="collapse" id="sidebarIcons">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('teams.index')}}">List</a>
+                            <a href="">List</a>
                         </li>
                         <li>
-                            <a href="{{route('teams.create')}}">Add</a>
+                            <a href="">Add</a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </li>
@@ -137,7 +140,7 @@
                         <li>
                             <a href="charts-chartjs.html">Add</a>
                         </li>
-                      
+
                     </ul>
                 </div>
             </li> --}}
@@ -151,12 +154,12 @@
                 <div class="collapse" id="sidebarForms">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('services.index')}}">Service List</a>
+                            <a href="">Service List</a>
                         </li>
                         <li>
-                            <a href="{{route('categories.index')}}">Category List</a>
+                            <a href="">Category List</a>
                         </li>
-                       
+
                     </ul>
                 </div>
             </li>
@@ -170,12 +173,12 @@
                 <div class="collapse" id="sidebarTables">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{route('portfolios.index')}}">List</a>
+                            <a href="">List</a>
                         </li>
                         <li>
-                            <a href="{{route('portfolios.create')}}">Add</a>
+                            <a href="">Add</a>
                         </li>
-                      
+
                     </ul>
                 </div>
             </li>

@@ -1,9 +1,9 @@
  <header id="header" class="header d-flex align-items-center sticky-top">
      <div class="container-fluid container-xl position-relative d-flex align-items-center">
-     <img src="{{ asset('storage/' .  $settings[0]->logo_image) }}" width="80" height="100" alt="">
          <a href="{{route('website.home')}}" class="logo d-flex align-items-center me-auto">
              <!-- Uncomment the line below if you also wish to use an image logo -->
-             
+             <img src="{{ asset('storage/' .  $settings[0]->logo_image) }}" width="80" height="100" alt="">
+
 
              <h1 class="sitename text-danger">Creative Biomed</h1>
              {{-- <span>.</span> --}}

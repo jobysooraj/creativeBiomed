@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2 data-aos="fade-up" class="text-danger" data-aos-delay="100">Bettter digital experience with Creative Biomed</h2>
+                    <h2 data-aos="fade-up" class="text-danger" data-aos-delay="100">Better digital experience with Creative Biomed</h2>
                     <p data-aos="fade-up" class="text-dark" data-aos-delay="200">Empowering Healthcare Through Precision, Innovation, and Expertise.</p>
                     <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
                         <a href="{{route('website.about')}}" class="btn-get-started">Get Started</a>
