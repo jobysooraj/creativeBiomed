@@ -29,7 +29,7 @@
                             <div class="col-lg-6 d-none d-lg-block p-2">
                                 <img src="{{ !empty($settings) && isset($settings[0]->logo_image) && file_exists(public_path('storage/' . $settings[0]->logo_image))
     ? asset('storage/' . $settings[0]->logo_image)
-    : asset('website/assets/img/hero-bg.jpeg') }}" alt="logo" height="300" width="300">
+    : asset('website/assets/img/no-image.png') }}" alt="logo" height="300" width="300">
 
                             </div>
                             <div class="col-lg-6">

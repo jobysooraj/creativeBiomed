@@ -43,7 +43,9 @@
              </div>
 
              <div class="col-lg-4 col-md-12 footer-newsletter">
-                 <img src="{{ asset('storage/' .  $settings[0]->logo_image) }}" width="100" height="100"alt="">
+                 <img src="{{ !empty($settings) && isset($settings[0]->logo_image) && file_exists(public_path('storage/' . $settings[0]->logo_image))
+    ? asset('storage/' . $settings[0]->logo_image)
+    : asset('website/assets/img/no-image.png') }}" alt="logo" height="300" width="300">
 
              </div>
 

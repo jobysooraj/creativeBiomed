@@ -2,7 +2,9 @@
      <div class="container-fluid container-xl position-relative d-flex align-items-center">
          <a href="{{route('website.home')}}" class="logo d-flex align-items-center me-auto">
              <!-- Uncomment the line below if you also wish to use an image logo -->
-             <img src="{{ asset('storage/' .  $settings[0]->logo_image) }}" width="80" height="100" alt="">
+ <img src="{{ !empty($settings) && isset($settings[0]->logo_image) && file_exists(public_path('storage/' . $settings[0]->logo_image))
+    ? asset('storage/' . $settings[0]->logo_image)
+    : asset('website/assets/img/no-image.png') }}" alt="logo" height="300" width="300">
 
 
              <h1 class="sitename text-danger">Creative Biomed</h1>
