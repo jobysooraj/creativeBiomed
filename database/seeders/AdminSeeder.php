@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
 class AdminSeeder extends Seeder
 {
@@ -17,7 +18,7 @@ class AdminSeeder extends Seeder
             'email' => 'admin@mailinator.com',
             'password' => bcrypt('Admin@Biomed'),
             'type' => 'Admin',
-            
+
         ]);
     }
 }
