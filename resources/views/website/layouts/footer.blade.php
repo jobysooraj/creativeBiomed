@@ -9,13 +9,13 @@
                  <div class="footer-contact pt-3">
                      <p>{{$settings[0]->company_address ?? ''}}</p>
 
-                     <p class="mt-3"><strong>Phone:</strong> <span>{{$settings[0]->phone}}</span></p>
-                     <p><strong>Email:</strong> <span>{{$settings[0]->email}}</span></p>
+                     <p class="mt-3"><strong>Phone:</strong> <span>{{$settings[0]->phone ?? ''}}</span></p>
+                     <p><strong>Email:</strong> <span>{{$settings[0]->email ?? ''}}</span></p>
                  </div>
                  <div class="social-links d-flex mt-4">
-                     <a href="{{$settings[0]->facebook_id}}"><i class="bi bi-facebook"></i></a>
-                     <a href="{{$settings[0]->instagram_id}}"><i class="bi bi-instagram"></i></a>
-                     <a href="{{$settings[0]->whatsapp_id}}"> <i class="bi bi-whatsapp"></i>
+                     <a href="{{$settings[0]->facebook_id ?? ''}}"><i class="bi bi-facebook"></i></a>
+                     <a href="{{$settings[0]->instagram_id ?? ''}}"><i class="bi bi-instagram"></i></a>
+                     <a href="{{$settings[0]->whatsapp_id ?? ''}}"> <i class="bi bi-whatsapp"></i>
                      </a>
                  </div>
              </div>
