@@ -7,7 +7,7 @@
                      <span class="sitename">Creative Biomed</span>
                  </a>
                  <div class="footer-contact pt-3">
-                     <p>{{$settings[0]->company_address}}</p>
+                     <p>{{$settings[0]->company_address ?? ''}}</p>
 
                      <p class="mt-3"><strong>Phone:</strong> <span>{{$settings[0]->phone}}</span></p>
                      <p><strong>Email:</strong> <span>{{$settings[0]->email}}</span></p>

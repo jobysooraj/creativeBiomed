@@ -22,7 +22,7 @@ Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])->group(function () {
-  
+
     Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');
     Route::resource('testimonials', TestimonialController::class);
     Route::resource('aboutuses', AboutUsController::class);
@@ -32,7 +32,7 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])->group(
     Route::resource('categories', CategoryController::class);
     Route::resource('services', ServiceController::class);
     Route::resource('portfolios', PortfolioController::class);
-  
+
 
 });
 Route::name('website.')->group(function(){
