@@ -1,4 +1,5 @@
 @extends('admin.layouts.app')
+@section('title', 'Contact Us')
 @section('content')
 <div class="content">
 

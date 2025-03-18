@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Creative BioMed')</title>
-    <!-- Add your CSS links here -->
+    <title>@yield('title') || {{ config('app.name') }}</title>
     <!-- Favicons -->
     <link href="{{ asset('website/assets/img/favicon.png')}}" rel="icon">
     <link href="{{ asset('website/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
@@ -29,13 +28,13 @@
     <!-- Include header -->
 
     {{-- <div class="container"> --}}
-        @yield('content')
-        <!-- Dynamic content section -->
+    @yield('content')
+    <!-- Dynamic content section -->
     {{-- </div> --}}
 
     @include('website.layouts.footer')
     <!-- Include footer -->
-     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     @stack('scripts')
     <!-- Vendor JS Files -->
     <script src="{{ asset('website/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -49,6 +48,6 @@
 
     <!-- Main JS File -->
     <script src="{{ asset('website/assets/js/main.js') }}"></script>
-    
+
 </body>
 </html>

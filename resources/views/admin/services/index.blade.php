@@ -1,4 +1,6 @@
 @extends('admin.layouts.app')
+@section('title', 'Service')
+
 @section('content')
 <div class="content">
 
@@ -29,8 +31,8 @@
                                     <th>Category</th>
                                     <th>Service</th>
                                     <th>price</th>
-                                    <th>Description</th>                                    
-                                    <th>Status</th>                                    
+                                    <th>Description</th>
+                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>

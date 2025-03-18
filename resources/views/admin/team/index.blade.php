@@ -1,4 +1,6 @@
 @extends('admin.layouts.app')
+@section('title', 'Team')
+
 @section('content')
 <div class="content">
 
@@ -16,11 +18,11 @@
                         <h4 class="header-title">Team Members</h4>
 
                     </div>
-                   
+
                     <div class="d-flex justify-content-end m-2">
                         <a href="{{route('teams.create')}}" class="btn btn-primary">Add Member</a>
                     </div>
-                  
+
                     <div class="card-body">
                         <table id="datatables-team" class="table table-striped dt-responsive nowrap w-100" data-url="{{ route('teams.index') }}">
                             <thead>

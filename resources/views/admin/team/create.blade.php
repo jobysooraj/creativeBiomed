@@ -1,4 +1,5 @@
 @extends('admin.layouts.app')
+@section('title', 'Team')
 
 @section('content')
 <div class="content">
@@ -24,7 +25,7 @@
                                     {{ session('success') }}
                                 </div>
                                 @endif
-                                
+
                                 <!-- Form to create a new team member -->
                                 <form action="{{ route('teams.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
