@@ -329,7 +329,9 @@
                         <i class="bi bi-briefcase icon flex-shrink-0"></i>
                         <div>
 
-                            <h4 class="title"><a href="{{route('website.service',$service->id)}}" class="stretched-link">{{$service->name}}</a></h4>
+                            <h4 class="title">
+                                <a href="{{ route('website.service', $service->slug) }}" class="stretched-link">{{ $service->name }}</a>
+                            </h4>
                             <p class="description">{{$service->name}}</p>
                         </div>
                     </div>

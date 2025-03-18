@@ -39,7 +39,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-   
+
 
     /**
      * Show the application dashboard.
@@ -64,15 +64,15 @@ class HomeController extends Controller
         // $settings = $this->settingsService->getAllSettings();
         return view('website.about',compact('aboutuses'));
     }
-    public function services(Request $request,$id)
+    public function services(Request $request,$slug)
     {
-        
+
          $services = $this->serviceService->getAllServices();
-         $serviceById = $this->serviceService->getServiceById($id);
-         
+         $serviceById = $this->serviceService->getServiceById($slug);
+
         //  $settings = $this->settingsService->getAllSettings();
         return view('website.service',compact('services','serviceById'));
     }
 
-    
+
 }

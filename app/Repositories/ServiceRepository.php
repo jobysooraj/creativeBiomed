@@ -11,14 +11,13 @@ class ServiceRepository implements ServiceRepositoryInterface
         return Service::with('category')->get();
     }
 
-    public function find($id)
+    public function find($slug)
     {
-        return Service::findOrFail($id);
+        return Service::where('slug', $slug)->firstOrFail();
     }
-
     public function create(array $data)
     {
-        
+
         return Service::create($data);
     }
 

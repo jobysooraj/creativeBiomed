@@ -10,7 +10,7 @@ use App\Http\Requests\ServiceRequest;
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\DB;
 use App\Models\Service;
-
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 use App\Traits\ImageUploadTrait;
 
@@ -44,11 +44,11 @@ class ServiceController extends Controller
                     return '<img src="' . $imageUrl . '" alt="Service Image" width="50" height="50" />';
                 })
                 ->addColumn('category', function ($row) {
-                    
+
                     return $row->category->name;
                 })
                 ->addColumn('service', function ($row) {
-                    
+
                     return $row->name;
                 })
                 ->addColumn('status', function ($row) {
@@ -88,7 +88,9 @@ class ServiceController extends Controller
             if ($request->hasFile('image')) {
                 $data['image'] = $this->uploadImage($request->file('image'), 'service');
             }
-         
+            $data['slug'] = Service::generateUniqueSlug($data['name']);
+
+
             $this->serviceService->createService($data);
 
             DB::commit();
@@ -122,7 +124,7 @@ class ServiceController extends Controller
                 }
                 $data['image'] = $this->uploadImage($request->file('image'), 'service');
             }
-           
+
             $this->serviceService->updateService($service->id, $data);
 
             DB::commit();

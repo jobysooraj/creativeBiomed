@@ -63,7 +63,7 @@
                         {{--  --}}
                         {{--  --}}
                         {{--  --}}
-                            <a href="">List</a>
+                            <a href="{{route('contactuses.index')}}">List</a>
                         </li>
 
                     </ul>
@@ -79,10 +79,10 @@
                 <div class="collapse" id="sidebarLayouts">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="" >List</a>
+                            <a href="{{route('testimonials.index')}}" >List</a>
                         </li>
                         <li>
-                            <a href="" >Add</a>
+                            <a href="{{route('testimonials.create')}}" >Add</a>
                         </li>
 
                     </ul>
@@ -101,7 +101,7 @@
                 <div class="collapse" id="sidebarExtendedUI">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="">List</a>
+                            <a href="{{route('settings.index')}}">List</a>
                         </li>
 
                     </ul>
@@ -116,10 +116,10 @@
                 <div class="collapse" id="sidebarIcons">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="">List</a>
+                            <a href="{{route('teams.index')}}">List</a>
                         </li>
                         <li>
-                            <a href="">Add</a>
+                            <a href="{{route('teams.create')}}">Add</a>
                         </li>
 
                     </ul>
@@ -154,10 +154,10 @@
                 <div class="collapse" id="sidebarForms">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="">Service List</a>
+                            <a href="{{route('services.index')}}">Service List</a>
                         </li>
                         <li>
-                            <a href="">Category List</a>
+                            <a href="{{route('categories.index')}}">Category List</a>
                         </li>
 
                     </ul>
@@ -173,10 +173,10 @@
                 <div class="collapse" id="sidebarTables">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="">List</a>
+                            <a href="{{route('portfolios.index')}}">List</a>
                         </li>
                         <li>
-                            <a href="">Add</a>
+                            <a href="{{route('portfolios.create')}}">Add</a>
                         </li>
 
                     </ul>

@@ -17,9 +17,9 @@ class ServicesService
         return $this->serviceRepository->all();
     }
 
-    public function getServiceById($id)
+    public function getServiceById($slug)
     {
-        return $this->serviceRepository->find($id);
+        return $this->serviceRepository->find($slug);
     }
 
     public function createService(array $data)

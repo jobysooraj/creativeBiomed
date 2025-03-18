@@ -38,6 +38,6 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])->group(
 Route::name('website.')->group(function(){
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/about-us', [HomeController::class, 'about'])->name('about');
-    Route::get('/service/{id}', [HomeController::class, 'services'])->name('service');
+    Route::get('/service/{slug}', [HomeController::class, 'services'])->name('service');
 });
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
